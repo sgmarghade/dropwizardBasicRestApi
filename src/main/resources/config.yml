@@ -1,0 +1,17 @@
+server:
+  connector:
+    port: 3000
+    type: http
+  adminContextPath: /admin
+  applicationContextPath: /
+  type: simple
+
+
+logging:
+  level: INFO
+  appenders:
+    - type: console
+      threshold: ALL
+      logFormat: "Rest API Demo %d [%thread] %-5level %c{15} - %msg%n%rEx"
+
+apiResponse: "this is rest tutorial with Dropwizard."
